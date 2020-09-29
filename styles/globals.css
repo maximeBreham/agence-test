@@ -1,16 +1,90 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+.globalImg {
+  widows: 100%;
+  height: auto;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.globalColor {
+  color: #3f729b;
 }
 
-* {
-  box-sizing: border-box;
+@media screen and (min-width : 768px) {
+  .globalImg {
+    widows: 100%;
+    height: 250px;
+  }
+
+  .paginateCenter {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.carrouselItem {
+  transform: translate(0%, -30%);
+}
+
+.carrouselMain {
+  height: 530px;
+}
+
+.globalButton {
+  border-radius: 15px;
+  background-color: #3f729b;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  font-size: 15px;
+}
+
+.card-noshadow {
+  box-shadow: none;
+}
+
+.activated {
+  font-weight: bold;
+  background-color: #3f729b;
+  pointer-events: none;
+  color: white;
+
+
+}
+
+.custom-paginate {
+  display: flex;
+  list-style: none;
+  width: fit-content;
+  align-items: center;
+  border: 1px solid rgb(185, 184, 184);
+  padding: 0 5px;
+  height: 40px;
+
+
+}
+
+.paginate {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  cursor: pointer;
+
+}
+
+.paginate.num {
+  border-radius: 30px;
+  height: 30px;
+}
+
+.previous {
+  padding-right: 20px;
+  border-right: 1px solid rgb(185, 184, 184);
+}
+
+.next {
+  padding-left: 20px;
+  border-left: 1px solid rgb(185, 184, 184);
+}
+
+.paginateCenter {
+  width: 50%;
+  margin: 0 auto;
 }
